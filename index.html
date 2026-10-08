@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureLens - Free Creature Identifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🌿 NatureLens</h1>
+            <p>Scan any animal or insect for free</p>
+        </header>
+
+        <!-- Live Camera Viewfinder -->
+        <div class="camera-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="photo-canvas" style="display:none;"></canvas>
+            <div id="scan-laser"></div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="scan-btn">📷 IDENTIFY CREATURE</button>
+
+        <!-- Results Display Box -->
+        <div id="result-card" class="hidden">
+            <h2 id="creature-name">Identifying...</h2>
+            <h3 id="scientific-name"></h3>
+            <p id="creature-description"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
